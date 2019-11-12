@@ -4,3 +4,7 @@
  Description:  This is the first theme created by John a child theme of WordPress' Twenty Seventeen theme
  Template:     twentysixteen
 */
+
+.home .entry-content { 
+	color:red;
+}

@@ -10,8 +10,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', ' close to the title</h1>' ); ?>
-		
+		<?php the_title( '<h1 class="entry-title">', '. I added text very close to the title</h1>' ); ?>
+		I added this text to demonstrate I can modify my website from my text edit! 
+		<br>
+		<br>
 	</header><!-- .entry-header -->
 
 	<?php twentysixteen_post_thumbnail(); ?>
