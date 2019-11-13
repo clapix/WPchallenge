@@ -18,7 +18,15 @@
 
 	<?php twentysixteen_post_thumbnail(); ?>
 
+
 	<div class="entry-content">
+
+	<!-- added ACF field -->
+	<?php
+		if ( get_field( 'phone_number' ) ){  ?>
+			<p> My super-updated phone number is: <?php the_field( 'phone_number' )?> </p>
+	<?php } ?>
+
 		<?php
 		the_content();
 
