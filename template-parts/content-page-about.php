@@ -10,10 +10,15 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+
 		<?php the_title( '<h1 class="entry-title">', '. I added text very close to the title</h1>' ); ?>
 		I added this text to demonstrate I can modify my website from my text edit! 
 		<br>
 		<br>
+		<!-- <?php
+		if ( get_field( 'company_logo' ) ){  ?>
+			<p> Logo here! <?php the_field( 'company_logo' )?> </p>
+	<?php } ?> -->
 	</header><!-- .entry-header -->
 
 	<?php twentysixteen_post_thumbnail(); ?>
@@ -25,6 +30,16 @@
 	<?php
 		if ( get_field( 'phone_number' ) ){  ?>
 			<p> My super-updated phone number is: <?php the_field( 'phone_number' )?> </p>
+	<?php } ?>
+
+	<?php
+		if ( get_field( 'email' ) ){  ?>
+			<p> My email address is <?php the_field( 'email' )?> </p>
+	<?php } ?>
+
+	<?php
+		if ( get_field( 'address' ) ){  ?>
+			<p> My address is: <?php the_field( 'address' )?> </p>
 	<?php } ?>
 
 		<?php
