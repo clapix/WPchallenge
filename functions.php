@@ -2,7 +2,7 @@
 
 
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles');
-add_filter ('the_title', 'filter_example');
+// add_filter ('the_title', 'filter_example');
 
 
 function filter_example($title) {
